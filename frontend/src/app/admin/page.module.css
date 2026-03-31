@@ -1,0 +1,179 @@
+.pagina {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.topoPagina {
+  margin-bottom: 24px;
+}
+
+.titulo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--cinza-700);
+}
+
+.subtitulo {
+  font-size: 0.875rem;
+  color: var(--cinza-400);
+  margin-top: 4px;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.chipFiltro {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: var(--cinza-200);
+  color: var(--cinza-600);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: var(--transicao);
+  border: none;
+}
+
+.chipFiltro:hover {
+  background: var(--cinza-300);
+}
+
+.chipFiltroAtivo {
+  background: var(--vermelho-principal);
+  color: white;
+}
+
+.listaPedidos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cardPedido {
+  background: var(--branco);
+  border-radius: var(--borda-raio-grande);
+  box-shadow: var(--sombra);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cardTopo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pedidoId {
+  font-size: 0.75rem;
+  color: var(--cinza-400);
+  font-weight: 600;
+}
+
+.restauranteNome {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cinza-700);
+}
+
+.pedidoData {
+  font-size: 0.8125rem;
+  color: var(--cinza-400);
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.statusPendente { background: #fff3cd; color: #856404; }
+.statusConfirmado { background: #cfe2ff; color: #084298; }
+.statusPreparando { background: #fff3cd; color: #664d03; }
+.statusSaiuEntrega { background: #d1ecf1; color: #0c5460; }
+.statusEntregue { background: var(--verde-claro); color: #1e5631; }
+.statusCancelado { background: #f8d7da; color: #842029; }
+
+.cardItens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item {
+  background: var(--cinza-100);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.8125rem;
+  color: var(--cinza-600);
+}
+
+.cardRodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid var(--cinza-200);
+}
+
+.total {
+  font-size: 0.9375rem;
+  color: var(--cinza-600);
+}
+
+.total strong {
+  color: var(--cinza-700);
+}
+
+.acoesStatus {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.botaoStatus {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: var(--vermelho-principal);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: var(--transicao);
+  border: none;
+}
+
+.botaoStatus:hover:not(:disabled) {
+  background: var(--vermelho-escuro);
+}
+
+.botaoStatus:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .cardTopo {
+    flex-direction: column;
+  }
+
+  .cardRodape {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

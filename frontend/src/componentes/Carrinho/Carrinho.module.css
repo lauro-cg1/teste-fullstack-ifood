@@ -1,0 +1,147 @@
+.carrinho {
+  background: var(--branco);
+  border-radius: var(--borda-raio-grande);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+}
+
+.cabecalho {
+  padding: 20px;
+  border-bottom: 1px solid var(--cinza-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.restauranteInfo {
+  font-size: 0.8125rem;
+  color: var(--cinza-500);
+  padding: 12px 20px;
+  background: var(--cinza-100);
+}
+
+.listaItens {
+  padding: 0 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--cinza-200);
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemNome {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cinza-700);
+}
+
+.itemPreco {
+  font-size: 0.8125rem;
+  color: var(--cinza-500);
+  margin-top: 2px;
+}
+
+.itemControles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.botaoQuantidade {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--vermelho-principal);
+  background: var(--branco);
+  color: var(--vermelho-principal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transicao);
+}
+
+.botaoQuantidade:hover {
+  background: var(--vermelho-principal);
+  color: var(--branco);
+}
+
+.quantidade {
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+.resumo {
+  padding: 20px;
+  border-top: 2px solid var(--cinza-200);
+}
+
+.linhaResumo {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 0.875rem;
+  color: var(--cinza-600);
+}
+
+.linhaTotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--cinza-700);
+  border-top: 1px solid var(--cinza-200);
+  margin-top: 8px;
+}
+
+.acoes {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vazio {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.vazio p {
+  color: var(--cinza-500);
+  margin-top: 8px;
+}
+
+.iconeVazio {
+  font-size: 3rem;
+}
+
+.botaoLimpar {
+  background: none;
+  color: var(--cinza-500);
+  font-size: 0.8125rem;
+  transition: var(--transicao);
+}
+
+.botaoLimpar:hover {
+  color: var(--vermelho-principal);
+}

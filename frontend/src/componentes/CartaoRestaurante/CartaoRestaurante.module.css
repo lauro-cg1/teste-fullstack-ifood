@@ -1,0 +1,126 @@
+.cartao {
+  background: var(--branco);
+  border-radius: var(--borda-raio-grande);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: var(--transicao);
+  cursor: pointer;
+}
+
+.cartao:hover {
+  box-shadow: var(--sombra-forte);
+  transform: translateY(-2px);
+}
+
+.imagemContainer {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background: var(--cinza-200);
+  position: relative;
+}
+
+.imagemContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholderImagem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background: linear-gradient(135deg, var(--cinza-200), var(--cinza-300));
+}
+
+.entregaGratis {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--verde);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+}
+
+.conteudo {
+  padding: 16px;
+}
+
+.nome {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cinza-700);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  color: var(--cinza-500);
+}
+
+.avaliacao {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--amarelo);
+  font-weight: 600;
+}
+
+.separador {
+  color: var(--cinza-300);
+}
+
+.categoria {
+  font-size: 0.75rem;
+  color: var(--cinza-400);
+  margin-top: 4px;
+}
+
+.detalhesEntrega {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--cinza-200);
+  font-size: 0.8125rem;
+  color: var(--cinza-500);
+}
+
+.taxaEntrega {
+  color: var(--verde);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .cartao {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .imagemContainer {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+  }
+
+  .conteudo {
+    flex: 1;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

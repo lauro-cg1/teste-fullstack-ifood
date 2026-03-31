@@ -1,0 +1,41 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.rotulo {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cinza-600);
+}
+
+.entrada {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--cinza-300);
+  border-radius: var(--borda-raio);
+  font-size: 0.9375rem;
+  color: var(--cinza-700);
+  background: var(--branco);
+  transition: var(--transicao);
+}
+
+.entrada:focus {
+  border-color: var(--vermelho-principal);
+  box-shadow: 0 0 0 3px rgba(234, 29, 44, 0.1);
+}
+
+.entrada::placeholder {
+  color: var(--cinza-400);
+}
+
+.erro .entrada {
+  border-color: var(--vermelho-principal);
+}
+
+.mensagemErro {
+  font-size: 0.75rem;
+  color: var(--vermelho-principal);
+}

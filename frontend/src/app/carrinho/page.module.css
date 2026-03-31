@@ -1,0 +1,117 @@
+.pagina {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 32px 16px 60px;
+}
+
+.titulo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.carrinhoVazio {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.iconeVazio {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.carrinhoVazio h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.carrinhoVazio p {
+  color: var(--cinza-500);
+  margin-bottom: 24px;
+}
+
+.secao {
+  background: var(--branco);
+  border-radius: var(--borda-raio-grande);
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: var(--sombra);
+}
+
+.secao h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.formaPagamento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.opcaoPagamento {
+  padding: 12px;
+  border: 2px solid var(--cinza-300);
+  border-radius: var(--borda-raio);
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cinza-600);
+  transition: var(--transicao);
+  background: var(--branco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.opcaoPagamento:hover {
+  border-color: var(--vermelho-principal);
+  color: var(--vermelho-principal);
+}
+
+.opcaoPagamentoSelecionada {
+  border-color: var(--vermelho-principal);
+  background: var(--vermelho-claro);
+  color: var(--vermelho-principal);
+}
+
+.itemResumo {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--cinza-200);
+}
+
+.itemResumo:last-child {
+  border-bottom: none;
+}
+
+.linhaTotalFinal {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-top: 2px solid var(--cinza-200);
+  margin-top: 8px;
+}
+
+.erro {
+  background: var(--vermelho-claro);
+  color: var(--vermelho-principal);
+  padding: 12px;
+  border-radius: var(--borda-raio);
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .formaPagamento {
+    grid-template-columns: 1fr;
+  }
+}

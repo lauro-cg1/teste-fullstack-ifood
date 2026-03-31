@@ -1,0 +1,150 @@
+.pagina {
+  padding: 32px 0 60px;
+}
+
+.heroi {
+  background: linear-gradient(135deg, #ea1d2c 0%, #b71c1c 100%);
+  padding: 48px 16px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.heroi h1 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.heroi p {
+  color: rgba(255,255,255,0.85);
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.secao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.alertaConexao {
+  background: #fff5f5;
+  border: 1px solid #f8b4b9;
+  border-radius: var(--borda-raio);
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.alertaConexao p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #8f1d26;
+}
+
+.botaoTentarNovamente {
+  border: none;
+  background: var(--vermelho-principal);
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.botaoTentarNovamente:hover {
+  background: var(--vermelho-escuro);
+}
+
+.tituloBusca {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--cinza-700);
+  margin-bottom: 16px;
+}
+
+.filtrosOrdenacao {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.chipFiltro {
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 2px solid var(--cinza-300);
+  background: var(--branco);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--cinza-600);
+  cursor: pointer;
+  transition: var(--transicao);
+}
+
+.chipFiltro:hover {
+  border-color: var(--vermelho-principal);
+  color: var(--vermelho-principal);
+}
+
+.chipFiltroAtivo {
+  border-color: var(--vermelho-principal);
+  background: var(--vermelho-principal);
+  color: white;
+}
+
+.chipFiltroAtivo:hover {
+  background: var(--vermelho-escuro);
+  color: white;
+}
+
+.paginacao {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px 0;
+}
+
+.botaoPagina {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--borda-raio);
+  border: 2px solid var(--cinza-300);
+  background: var(--branco);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cinza-600);
+  cursor: pointer;
+  transition: var(--transicao);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoPagina:hover {
+  border-color: var(--vermelho-principal);
+  color: var(--vermelho-principal);
+}
+
+.botaoPaginaAtivo {
+  border-color: var(--vermelho-principal);
+  background: var(--vermelho-principal);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .alertaConexao {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroi h1 {
+    font-size: 1.75rem;
+  }
+}

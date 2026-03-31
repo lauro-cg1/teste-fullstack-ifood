@@ -1,0 +1,172 @@
+.cabecalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: var(--branco);
+  box-shadow: var(--sombra);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.cabecalhoConteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--vermelho-principal);
+  cursor: pointer;
+}
+
+.logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.linkNav {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cinza-600);
+  transition: var(--transicao);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.linkNav:hover {
+  color: var(--vermelho-principal);
+}
+
+.botaoCarrinho {
+  position: relative;
+  background: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cinza-600);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transicao);
+}
+
+.botaoCarrinho:hover {
+  color: var(--vermelho-principal);
+}
+
+.badgeCarrinho {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--vermelho-principal);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoesAuth {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.botaoEntrar {
+  background: none;
+  color: var(--vermelho-principal);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 8px 16px;
+  border-radius: var(--borda-raio);
+  transition: var(--transicao);
+}
+
+.botaoEntrar:hover {
+  background: var(--vermelho-claro);
+}
+
+.botaoCadastrar {
+  background: var(--vermelho-principal);
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 8px 16px;
+  border-radius: var(--borda-raio);
+  transition: var(--transicao);
+}
+
+.botaoCadastrar:hover {
+  background: var(--vermelho-escuro);
+}
+
+.usuarioMenu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.nomeUsuario {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--cinza-600);
+}
+
+.botaoSair {
+  background: none;
+  color: var(--cinza-500);
+  font-size: 0.75rem;
+  transition: var(--transicao);
+}
+
+.botaoSair:hover {
+  color: var(--vermelho-principal);
+}
+
+.menuMobile {
+  display: none;
+  background: none;
+  font-size: 1.5rem;
+  color: var(--cinza-600);
+}
+
+@media (max-width: 768px) {
+  .navegacao {
+    display: none;
+  }
+  
+  .botoesAuth {
+    display: none;
+  }
+
+  .usuarioMenu .nomeUsuario {
+    display: none;
+  }
+
+  .menuMobile {
+    display: flex;
+  }
+}

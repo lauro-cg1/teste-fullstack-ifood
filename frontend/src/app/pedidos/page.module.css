@@ -1,0 +1,106 @@
+.pagina {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 16px 60px;
+}
+
+.titulo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.cardPedido {
+  background: var(--branco);
+  border-radius: var(--borda-raio-grande);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--sombra);
+  transition: var(--transicao);
+  cursor: pointer;
+}
+
+.cardPedido:hover {
+  box-shadow: var(--sombra-forte);
+}
+
+.pedidoCabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.restauranteNome {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.pedidoData {
+  font-size: 0.75rem;
+  color: var(--cinza-400);
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.statusPendente { background: #fff3cd; color: #856404; }
+.statusConfirmado { background: #d1ecf1; color: #0c5460; }
+.statusPreparando { background: #fff3cd; color: #856404; }
+.statusSaiuEntrega { background: #d4edda; color: #155724; }
+.statusEntregue { background: var(--verde-claro); color: var(--verde); }
+.statusCancelado { background: var(--vermelho-claro); color: var(--vermelho-principal); }
+
+.pedidoItens {
+  font-size: 0.8125rem;
+  color: var(--cinza-500);
+  margin-bottom: 12px;
+}
+
+.pedidoRodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--cinza-200);
+}
+
+.pedidoTotal {
+  font-weight: 700;
+  color: var(--cinza-700);
+}
+
+.botaoCancelar {
+  background: none;
+  color: var(--vermelho-principal);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  transition: var(--transicao);
+}
+
+.botaoCancelar:hover {
+  text-decoration: underline;
+}
+
+.vazio {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--cinza-500);
+}
+
+.iconeVazio {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.statusLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cinza-600);
+  margin-bottom: 4px;
+}

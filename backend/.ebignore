@@ -1,0 +1,9 @@
+.env
+.env.local
+.env.*
+node_modules/
+cobertura/
+testes/
+jest.config.js
+*.test.js
+.git/
