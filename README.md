@@ -216,8 +216,14 @@ http://ifood-clone-backend-prod-env-1.eba-3svxwcd6.us-east-2.elasticbeanstalk.co
 
 ### AWS — Frontend (Amplify)
 
-https://master.din5nd9uw659k.amplifyapp.com/
+https://main.d3ok36v2okd2fu.amplifyapp.com/
 
+Usuários de teste:
+joao@email.com:123456
+maria@email.com:123456
+
+Administrador de teste (página do admin simula pedidos recebidos pelo restaurante):
+admin@ifood.com:123456
 ---
 
 ## Modelos do Banco de Dados
