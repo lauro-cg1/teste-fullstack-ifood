@@ -18,7 +18,7 @@ export default function LayoutRaiz({ children }) {
           <CarrinhoProvedor>
             <Toaster position="top-right" />
             <Cabecalho />
-            <main style={{ minHeight: 'calc(100vh - 140px)', paddingTop: '70px' }}>
+            <main style={{ minHeight: 'calc(100vh - 140px)', paddingTop: '70px', maxWidth: '100vw', overflowX: 'hidden' }}>
               {children}
             </main>
             <Rodape />

@@ -2,6 +2,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 32px 16px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -9,6 +10,8 @@
   border-radius: var(--borda-raio-grande);
   box-shadow: var(--sombra);
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .cabecalho {
@@ -87,6 +90,12 @@
 }
 
 @media (max-width: 600px) {
+  .pagina {
+    padding: 16px 12px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .grade {
     grid-template-columns: 1fr;
   }
@@ -97,5 +106,9 @@
 
   .formulario {
     padding: 24px 16px;
+  }
+
+  .titulo {
+    font-size: 1.25rem;
   }
 }

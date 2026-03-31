@@ -57,7 +57,10 @@
 @media (max-width: 480px) {
   .formulario {
     padding: 24px 16px;
-    margin: 0 12px;
+    margin: 0;
     border-radius: var(--borda-raio);
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
   }
 }

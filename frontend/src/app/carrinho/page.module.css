@@ -2,6 +2,7 @@
   max-width: 700px;
   margin: 0 auto;
   padding: 32px 16px 60px;
+  box-sizing: border-box;
 }
 
 .titulo {
@@ -37,6 +38,7 @@
   padding: 24px;
   margin-bottom: 16px;
   box-shadow: var(--sombra);
+  box-sizing: border-box;
 }
 
 .secao h3 {
@@ -113,5 +115,21 @@
 @media (max-width: 480px) {
   .formaPagamento {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagina {
+    padding: 16px 12px 40px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .secao {
+    padding: 16px;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
   }
 }

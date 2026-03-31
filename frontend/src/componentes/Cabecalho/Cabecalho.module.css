@@ -153,7 +153,8 @@
   color: var(--cinza-600);
 }
 
-.menuMobileConteudo {
+.menuMobileConteudo,
+.menuMobileConteudoOculto {
   display: none;
 }
 
@@ -184,7 +185,7 @@
   .menuMobileConteudo {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 0;
     right: 0;

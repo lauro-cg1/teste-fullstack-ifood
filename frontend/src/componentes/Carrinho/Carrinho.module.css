@@ -3,6 +3,9 @@
   border-radius: var(--borda-raio-grande);
   box-shadow: var(--sombra);
   overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .cabecalho {
@@ -43,12 +46,17 @@
 
 .itemInfo {
   flex: 1;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .itemNome {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--cinza-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .itemPreco {
@@ -144,4 +152,35 @@
 
 .botaoLimpar:hover {
   color: var(--vermelho-principal);
+}
+
+@media (max-width: 480px) {
+  .cabecalho {
+    padding: 16px;
+  }
+
+  .restauranteInfo {
+    padding: 10px 16px;
+  }
+
+  .listaItens {
+    padding: 0 16px;
+  }
+
+  .item {
+    padding: 12px 0;
+    gap: 12px;
+  }
+
+  .resumo {
+    padding: 16px;
+  }
+
+  .acoes {
+    padding: 0 16px 16px;
+  }
+
+  .vazio {
+    padding: 40px 16px;
+  }
 }

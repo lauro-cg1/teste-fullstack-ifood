@@ -5,4 +5,13 @@
   justify-content: center;
   padding: 40px 16px;
   background: var(--cinza-100);
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .paginaAuth {
+    padding: 24px 12px;
+  }
 }

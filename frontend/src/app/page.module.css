@@ -139,12 +139,35 @@
 }
 
 @media (max-width: 768px) {
+  .pagina {
+    padding: 16px 0 40px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .secao {
+    padding: 0 12px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
   .alertaConexao {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .heroi {
+    padding: 32px 12px;
+  }
+
   .heroi h1 {
     font-size: 1.75rem;
+  }
+
+  .filtrosOrdenacao {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
   }
 }

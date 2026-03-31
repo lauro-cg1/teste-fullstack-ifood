@@ -69,7 +69,7 @@ export default function PaginaRestaurante() {
   return (
     <>
       <div className={estilos.pagina}>
-        <div>
+        <div className={estilos.conteudoPrincipal}>
           {restaurante.imagem_capa ? (
             <img src={restaurante.imagem_capa} alt={restaurante.nome} className={estilos.capa} />
           ) : (
