@@ -224,6 +224,7 @@ maria@email.com:123456
 
 Administrador de teste (página do admin simula pedidos recebidos pelo restaurante):
 admin@ifood.com:123456
+
 ---
 
 ## Modelos do Banco de Dados
