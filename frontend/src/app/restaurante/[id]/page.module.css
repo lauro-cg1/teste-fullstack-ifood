@@ -150,19 +150,41 @@
   }
 
   .carrinhoFixo {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: auto;
-    z-index: 100;
-    box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
+    position: static;
+    margin-top: 32px;
   }
 }
 
 @media (max-width: 768px) {
+  .pagina {
+    padding: 16px 12px 40px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .capa, .capaPlaceholder {
-    height: 200px;
+    height: 180px;
     border-radius: var(--borda-raio);
+  }
+
+  .infoContainer {
+    padding: 16px;
+  }
+
+  .infoTopo {
+    flex-wrap: wrap;
+  }
+
+  .infoTexto h1 {
+    font-size: 1.25rem;
+  }
+
+  .badges {
+    flex-wrap: wrap;
+  }
+
+  .carrinhoFixo {
+    position: static;
+    margin-top: 24px;
   }
 }

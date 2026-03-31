@@ -82,6 +82,40 @@ export default function Cabecalho() {
           {menuAberto ? <FiX /> : <FiMenu />}
         </button>
       </div>
+
+      <div className={menuAberto ? estilos.menuMobileConteudo : estilos.menuMobileConteudoOculto}>
+        <Link href="/" onClick={() => setMenuAberto(false)}>Início</Link>
+        {estaAutenticado && (
+          <Link href="/pedidos" onClick={() => setMenuAberto(false)}>
+            <FiFileText size={16} /> Pedidos
+          </Link>
+        )}
+        {estaAutenticado && (
+          <Link href="/conta" onClick={() => setMenuAberto(false)}>
+            <FiUser size={16} /> Minha Conta
+          </Link>
+        )}
+        {estaAutenticado && usuario?.admin && (
+          <Link href="/admin" onClick={() => setMenuAberto(false)}>
+            <FiSettings size={16} /> Admin
+          </Link>
+        )}
+        <Link href="/carrinho" onClick={() => setMenuAberto(false)}>
+          <FiShoppingBag size={16} /> Sacola
+          {totalItens > 0 && <span className={estilos.badgeCarrinho}>{totalItens}</span>}
+        </Link>
+        {!estaAutenticado && (
+          <>
+            <Link href="/entrar" onClick={() => setMenuAberto(false)}>Entrar</Link>
+            <Link href="/cadastrar" onClick={() => setMenuAberto(false)}>Criar conta</Link>
+          </>
+        )}
+        {estaAutenticado && (
+          <button onClick={() => { aoSair(); setMenuAberto(false); }}>
+            <FiLogOut size={16} /> Sair
+          </button>
+        )}
+      </div>
     </header>
   );
 }

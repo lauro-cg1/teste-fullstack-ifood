@@ -153,7 +153,15 @@
   color: var(--cinza-600);
 }
 
+.menuMobileConteudo {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .cabecalhoConteudo {
+    position: relative;
+  }
+
   .navegacao {
     display: none;
   }
@@ -162,11 +170,53 @@
     display: none;
   }
 
-  .usuarioMenu .nomeUsuario {
-    display: none;
+  .usuarioMenu {
+    order: 2;
+    margin-left: auto;
   }
 
   .menuMobile {
     display: flex;
+    order: 3;
+    margin-left: 8px;
+  }
+
+  .menuMobileConteudo {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--branco);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    z-index: 999;
+    padding: 12px 0;
+    border-top: 1px solid var(--cinza-200);
+  }
+
+  .menuMobileConteudo a,
+  .menuMobileConteudo button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--cinza-700);
+    width: 100%;
+    text-align: left;
+    background: none;
+    transition: var(--transicao);
+  }
+
+  .menuMobileConteudo a:hover,
+  .menuMobileConteudo button:hover {
+    background: var(--cinza-100);
+    color: var(--vermelho-principal);
+  }
+
+  .menuMobileConteudoOculto {
+    display: none;
   }
 }

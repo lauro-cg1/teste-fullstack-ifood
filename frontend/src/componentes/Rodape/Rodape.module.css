@@ -52,11 +52,13 @@
   .rodapeConteudo {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .rodapeConteudo {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 }

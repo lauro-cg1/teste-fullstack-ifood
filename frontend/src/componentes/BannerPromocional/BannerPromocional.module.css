@@ -42,10 +42,16 @@
 @media (max-width: 768px) {
   .banner {
     padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .bannerConteudo {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .bannerConteudo h2 {
