@@ -179,7 +179,7 @@ Storybook em `http://localhost:6006`
 - [x] CRUD completo de restaurantes, produtos, categorias e pedidos
 - [x] Autenticação e autorização com JWT
 - [x] Hash de senhas com bcryptjs
-- [x] Rate limiting (100 req / 15 min)
+- [x] Rate limiting
 - [x] Headers de segurança com Helmet
 - [x] Validação de entrada com express-validator
 - [x] Tratamento centralizado de erros

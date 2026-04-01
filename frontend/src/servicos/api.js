@@ -41,17 +41,26 @@ export const AutenticacaoAPI = {
 
 export const RestauranteAPI = {
   listarTodos: (params) => api.get('/restaurantes', { params }),
-  obterPorId: (id) => api.get(`/restaurantes/${id}`)
+  obterPorId: (id) => api.get(`/restaurantes/${id}`),
+  criar: (dados) => api.post('/restaurantes', dados),
+  atualizar: (id, dados) => api.put(`/restaurantes/${id}`, dados),
+  remover: (id) => api.delete(`/restaurantes/${id}`)
 };
 
 export const CategoriaAPI = {
-  listarTodas: () => api.get('/categorias')
+  listarTodas: () => api.get('/categorias'),
+  obterPorId: (id) => api.get(`/categorias/${id}`),
+  criar: (dados) => api.post('/categorias', dados),
+  atualizar: (id, dados) => api.put(`/categorias/${id}`, dados)
 };
 
 export const ProdutoAPI = {
   listarPorRestaurante: (restauranteId) => api.get(`/produtos/restaurante/${restauranteId}`),
   buscar: (params) => api.get('/produtos/buscar', { params }),
-  obterPorId: (id) => api.get(`/produtos/${id}`)
+  obterPorId: (id) => api.get(`/produtos/${id}`),
+  criar: (dados) => api.post('/produtos', dados),
+  atualizar: (id, dados) => api.put(`/produtos/${id}`, dados),
+  remover: (id) => api.delete(`/produtos/${id}`)
 };
 
 export const PedidoAPI = {
