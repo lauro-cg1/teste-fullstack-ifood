@@ -181,7 +181,7 @@ const semear = async () => {
 
       { nome: 'Prato Self Service (kg)', descricao: 'Monte seu prato à vontade: pratos quentes, saladas e acompanhamentos. Preço por kg.', preco: 69.90, imagem: IMG_BRASILEIRA, restaurante_id: restaurantes[2].id, categoria_produto: 'Self Service', destaque: true },
       { nome: 'Frango Grelhado', descricao: 'Filé de frango grelhado temperado com ervas finas', preco: 29.90, imagem: IMG_BRASILEIRA, restaurante_id: restaurantes[2].id, categoria_produto: 'Pratos Quentes' },
-      { nome: 'Estrogànofe de Carne', descricao: 'Estrogànofe cremoso de carne com arroz e batata palha', preco: 31.90, imagem: IMG_BRASILEIRA, restaurante_id: restaurantes[2].id, categoria_produto: 'Pratos Quentes' },
+      { nome: 'Estrogonofe de Carne', descricao: 'Estrogonofe cremoso de carne com arroz e batata palha', preco: 31.90, imagem: IMG_BRASILEIRA, restaurante_id: restaurantes[2].id, categoria_produto: 'Pratos Quentes' },
       { nome: 'Escondidinho de Frango', descricao: 'Purê de batata com frango desfiado e queijo gratinado', preco: 27.90, imagem: IMG_BRASILEIRA, restaurante_id: restaurantes[2].id, categoria_produto: 'Pratos Quentes' },
       { nome: 'Salada Mista', descricao: 'Alface, rúcula, tomate cereja, cenoura e azeite', preco: 16.90, imagem: IMG_BRASILEIRA, restaurante_id: restaurantes[2].id, categoria_produto: 'Saladas' },
       { nome: 'Pudim de Leite', descricao: 'Pudim de leite condensado com calça de caramelo', preco: 12.90, imagem: IMG_BRASILEIRA, restaurante_id: restaurantes[2].id, categoria_produto: 'Sobremesas' },
